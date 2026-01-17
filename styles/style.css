@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+/** Elementos HTML + CSS **/
+footer {
+  background-color: grey;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .footer-header {
+  width: 100%;
+  font-weight: bold;
+  border-bottom: 2px solid white;
+  padding: 10px 0;
+}
+
+footer .bottom-box {
+  margin-top: 10px;
+  font-size: 0.9em;
+  width: 33%;
+  padding: 10px;
+}
+
+/** Clases de CSS **/
+.header {
+  height: 250px;
+  background-image: url("/assets/cleaning-items.webp");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content {
+  text-align: center;
+}
+
+.header-title {
+  color: goldenrod;
+  font-size: 45px;
+  text-shadow: 3px 3px 3px black;
+}
+
+.header-subtitle {
+  color: black;
+  font-size: 20px;
+  text-shadow: 3px 3px 3px white;
+}
+
+.menu {
+  background: midnightblue;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 10px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.menu a:hover {
+  color: goldenrod;
+}
+
+.section {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.section-blue {
+  background-color: lightblue;
+}
+
+.section-beige {
+  background-color: beige;
+}
+
+.bordered-box {
+  width: 50%;
+  text-align: left;
+  display: flex;
+}
+
+.section-title {
+  color: blue;
+  text-align: center;
+}
+
+.image-box {
+  width: 50%;
+}
+
+.boxed-image {
+  width: 80%;
+}
+
+.text-box {
+  width: 50%;
+  text-align: left;
+}
+
+.opinions-container {
+  width: 100%;
+  max-width: 1100px;
+  background-color: white;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.opinion {
+  width: 260px;
+  text-align: center;
+  border: 2px solid black;
+  padding: 20px;
+}
+
+.opinion .bordered-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 12px;
+}
+
+.icon-image {
+  width: 64px;
+  height: 64px;
+}
+
+@media (max-width: 700px) {
+  .menu {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .quienes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quienes__img img {
+    width: 90%;
+  }
+
+  .opiniones {
+    flex-direction: column;
+    align-items: center;
+  }
+}
